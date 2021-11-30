@@ -6,6 +6,7 @@ This project was bootstrapped with Create React App and use
 - Redux (7.2.6)
 - React router (6.0.2)
 - [Projet 14 plugin (0.1.5) - the amazing alert plugin](https://www.npmjs.com/package/projet-14-plugin)
+
 We recommend to use [Visual Studio Code](https://code.visualstudio.com/) to edit and launch this project and lastest version of [Chrome](https://www.google.fr/chrome/) browser with [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/) plugin and [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/) plugin
 
 ## Prerequisites
