@@ -1,0 +1,123 @@
+
+
+
+.alert {
+    position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;
+    overflow-y: auto;
+}
+
+.alert-container {
+    display: flex; justify-content: center; align-items: center; 
+    min-height: 100vh; 
+    padding: 1rem 1rem 5rem;
+    text-align: center;
+}
+
+.alert-overlay {
+    position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity 200ms linear;
+}
+
+.alert-spacer {
+    display: none;
+    /* on phone
+    display: inline-block; 
+    min-height: 100vh; 
+    vertical-align: middle;
+    */
+}
+.alert-wrapper {
+    /* sm:my-8 sm:align-middle sm:max-w-lg sm:w-full */
+    position: relative;
+    display: inline-block;
+    max-width: 40rem;
+    vertical-align: bottom;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    text-align: left;
+    transition: all 200ms linear;
+}
+
+.alert-modal {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem 2rem;
+    margin: 2rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "icon title"
+        "icon content"
+        "actions actions";
+}
+
+.alert-modal-close {
+    position: absolute; top: 1.8rem; right: 1.8rem;
+    display: flex; justify-content: center; align-items: center;
+    width: 2rem; height: 2rem;
+    border-radius: 2rem;
+}
+
+.alert-modal-close:hover {
+    background-color: #E7E5E4;
+}
+
+.alert-modal-close svg {
+    width: 1.5rem; height: 1.5rem;
+    fill: currentColor;
+    color: #44403C;
+}
+
+
+.alert-modal-icon { 
+    grid-area: icon;
+    display: flex; justify-content: center; align-items: center;
+    width: 3rem; height: 3rem;
+    border-radius: 3rem;
+    background: #57534E;
+}
+.alert-modal-icon svg {
+    width: 1.5rem; height: 1.5rem;
+    fill: currentColor;
+    color: #ffffff;
+
+}
+
+.alert-modal-icon.primary { 
+    background: #0284C7;
+}
+.alert-modal-icon.success { 
+    background: #65A30D;
+}
+.alert-modal-icon.danger { 
+    background: #DC2626;
+}
+.alert-modal-icon.warning { 
+    background: #EA580C;
+}
+.alert-modal-icon.info { 
+    background: #0891B2;
+}
+
+
+
+.alert-modal-title {
+    grid-area: title; 
+    color: #1C1917;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.alert-modal-content { 
+    grid-area: content; 
+}
+.alert-modal-actions { 
+    grid-area: actions; 
+    display: flex; justify-content: flex-end;
+    gap: 2rem;
+}
+  
